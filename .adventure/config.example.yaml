@@ -1,0 +1,34 @@
+# Copy to .adventure/config.yaml (committed team defaults)
+# Optional overlay: .adventure/config.local.yaml (gitignored)
+
+docs_root: docs
+tracker: github # github | linear | local
+tracker_url: ""
+
+lanes:
+  pm: ""
+  design: ""
+  eng: ""
+  em: ""
+  security: ""
+  qa: ""
+  partner: ""
+
+gates:
+  merge:
+    - tests
+    - review
+    - blast-radius
+  ship:
+    - flag
+    - rollback
+    - observability
+    - slo
+    - owner
+
+triage_labels:
+  inbox: adventure:inbox
+  ready: adventure:ready
+  blocked: adventure:blocked
+  doing: adventure:doing
+  done: adventure:done

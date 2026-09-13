@@ -1,0 +1,27 @@
+{
+  "name": "adventure",
+  "displayName": "Adventure",
+  "version": "0.1.0",
+  "description": "Enterprise AI PDLC. Align across PM, design, and eng. Contract, gate, ship, then compound what you learned.",
+  "author": {
+    "name": "Adventure"
+  },
+  "license": "MIT",
+  "keywords": [
+    "pdlc",
+    "enterprise",
+    "collaboration",
+    "workflow",
+    "principles",
+    "handoff"
+  ],
+  "category": "developer-tools",
+  "tags": [
+    "workflow",
+    "planning",
+    "review",
+    "collaboration"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/"
+}

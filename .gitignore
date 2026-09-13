@@ -1,0 +1,4 @@
+.DS_Store
+node_modules/
+.adventure/config.local.yaml
+*.local.yaml

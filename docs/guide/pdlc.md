@@ -2,16 +2,18 @@
 
 Adventure's product development loop is a **gate chain**, not a waterfall. You can enter at any stage. You cannot skip a gate by renaming the work.
 
-## Stages
+Skills for these stages are not in the repo yet.
 
-1. **Discover.** `/brief` captures the problem in production language. `/align` grills until the design tree is empty.
-2. **Shape.** `/critique` for interaction. `/spec` for behaviour at named seams. `/contract` when another team or service must keep a promise. `/rfc` when the change is contested or cross-cutting.
-3. **Sequence.** `/tickets` cuts tracer bullets with blocking edges. `/wayfind` if one session cannot hold the map. `/staff` if people and risk are the constraint.
-4. **Build.** `/build` implements one ticket or spec. Architect before code that crosses a function boundary. TDD at agreed seams.
-5. **Prove.** `/prove` exercises the real path. `/blast-radius` names what else can break. `/gate` fills evidence cells.
-6. **Review.** `/review` is two axes (standards, spec) plus enterprise (security, ops, contracts).
-7. **Ship.** `/ship` is flag, rollback, observability, owner. Merge is not ship.
-8. **Learn.** `/compound` writes a lesson. If the lesson is an interface, update the contract in the same change.
+## Stages (planned)
+
+1. **Discover.** Brief in production language. Align until the design tree is empty.
+2. **Shape.** Critique for interaction. Spec at named seams. Contract when another team must keep a promise. RFC when contested or cross-cutting.
+3. **Sequence.** Tracer-bullet tickets with blocking edges. Wayfind if one session cannot hold the map. Staff if people and risk are the constraint.
+4. **Build.** One ticket or spec. Architect before code that crosses a function boundary. TDD at agreed seams.
+5. **Prove.** Real path. Blast radius. Gate evidence cells.
+6. **Review.** Standards, spec fidelity, security, ops, contracts.
+7. **Ship.** Flag, rollback, observability, owner. Merge is not ship.
+8. **Learn.** Lesson file. If the lesson is an interface, update the contract in the same change.
 
 ## Tracer bullets
 

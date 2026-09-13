@@ -1,6 +1,6 @@
 # Principles
 
-Steer with these names. `/adventure-mode` indexes them at the start of multi-step work. A citation must name the decision it changed.
+Steer with these names once skills exist. A citation must name the decision it changed.
 
 | Name | When |
 | --- | --- |
@@ -17,4 +17,4 @@ Steer with these names. `/adventure-mode` indexes them at the start of multi-ste
 | Evidence in the sentence | Claims. Measured, inferred, or guess. |
 | Human for preference | Forks. Observe facts. Ask only preference, policy, or taste. |
 
-Full text lives in `skills/principle-*/SKILL.md`.
+Leaf principle skills are not in the repo yet.

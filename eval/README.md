@@ -9,9 +9,13 @@ bun install
 bun eval/run.ts
 ```
 
-Requires Bun and no API key for Layer 1 (Layer 2, built by #8, will require `DEEPSEEK_API_KEY`).
+Requires Bun. Layer 1 needs no API key; Layer 2 runs live DeepSeek sessions and needs DeepSeek credentials (`DEEPSEEK_API_KEY` or a `deepseek` entry in `~/.pi/agent/auth.json`).
 
-Exit code is non-zero when any check fails.
+Exit code is non-zero when any check or scenario fails.
+
+Flags: `--checks-only`, `--scenarios-only`, `--scenario <name>` (repeatable), `--repeat <k>` (independent full runs; pass^k read from the report), `--model <provider/id>`.
+
+Reports land in gitignored `eval/output/<run-id>/` (`report.json`, `report.md`, per-scenario transcripts).
 
 ## Layers
 
@@ -22,7 +26,7 @@ Exit code is non-zero when any check fails.
   - `lifecycle` (R3a): `lifecycle.md`'s state flows define exactly the vocabulary in `eval/harness/types.ts`.
   - `ticket-templates` (R4a): the `tickets.md` Adventure/Quest templates contain every required section.
   - `commands` (R5): slash-command references map to existing skills; `docs/skills.md` covers every skill (`/prove` whitelisted as application-provided).
-- **Layer 2 — scenario runs** (ticket #8): scripted headless pi sessions against a fixture project. On-demand only, never a push gate.
+- **Layer 2 — scenario runs** (#8): scripted headless pi sessions against a fixture project. On-demand only, never a push gate. Each scenario (`eval/scenarios/<name>.scenario.ts`) declares its model, steps, fixture, and assertions; the harness (`eval/harness/`) provisions fixtures outside the repo, drives the session with a scripted user (bounded clarifications, per-step/scenario timeouts), asserts on Journal state, and writes the report. Adding a scenario = adding one scenario file (plus fixture extras in its own `FixtureSpec`), no runner changes.
 
 ## Current findings
 
